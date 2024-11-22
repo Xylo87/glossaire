@@ -14,14 +14,60 @@
 
 ## Général
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
+    
+    => Environnement de développement PHP => compilateur/moteur d'exécution (Zend Engine) + Serveur Web HTTP (Apache) + Serveur de base de données (MySQL) 
+    = technologie AMP
+    => Logiciels qui permettent ce contexte : Laragon, WAMP
+
 2.	Qu’est-ce qu’un algorithme ?  
+
+    => Suite d'instructions et/ou d'opérations, finie et non ambiguë, pour résoudre un problème et en obtenir une solution.
+    Traduit dans un language informatique pour élaborer un programme.
+
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
+
+    => Espace mémoire qui associent un nom (identifiant) à une valeur; utilisées par programme pour mémoriser des données nécessaires au fonctionnement du programme.
+    Peuvent être statiques ou dynamiques (changement de valeur sans la redéclarer).
+    => Préfixe en PHP : $
+
 4.	Qu’est-ce que la portée d’une variable ?
+
+    => Champ d'accessibilité dans laquelle elle peut être utilisée. Variable disponible que dans le contexte dans lequel elle a été déclarée.
+    Portée se limite à son bloc. 
+    Syn. : Scope
+    Hoisting = variable a une portée hors de son Scope (ex. Var en JS)
+
 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
+
+    => Variables peuvent être statiques ou dynamiques (changement de valeur sans la redéclarer).
+    Constante = variable statique.
+
 6.	Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation 
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
+
+    => - Entier (Integer) => ex. 7
+    - Réel (Float ou Double) => ex. 3.5
+    - Booléen (Boolean) => True/False
+    - Chaîne de caractère (String) => "Ce foie gras n'est quand même vraiment pas terrible Charles-Édouard"
+    - Variable sans valeur => null
+
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
+
+    => - Tableaux indexés [..., ..., ...]
+    - Tableaux associatifs (
+                        clé => valeur
+                        clé => valeur
+                        clé => valeur
+                        )
+    - Tableaux multidimensionnels [..., ..., [..., ..., ...]]
+
 9.	Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
+
+    => - Structure séquentielle (instructions exécutées l'une après l'autre selon un ordre) => ex. Permuter deux entiers
+    - Structure alternative (instructions exécutées selon les réponses à des conditions) => ex. If, If/Else, Switch etc.
+    - Structure itérative (portion de code à exécuter plusieurs fois de suite - boucles) => ex. While, For, ForEach
+    - Fonctions 
+
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
