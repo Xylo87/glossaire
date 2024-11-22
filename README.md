@@ -66,16 +66,30 @@
     => - Structure séquentielle (instructions exécutées l'une après l'autre selon un ordre) => ex. Permuter deux entiers
     - Structure alternative (instructions exécutées selon les réponses à des conditions) => ex. If, If/Else, Switch etc.
     - Structure itérative (portion de code à exécuter plusieurs fois de suite - boucles) => ex. While, For, ForEach
-    - Fonctions 
+    - Fonctions (série d'opérations à partir d'arguments-valeurs, passés en paramètres > la fonction renvoie ensuite un résultat, qui est une valeur) => ex. Function/Method en JS
 
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
+
+    => strlen($CdC)
+
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
 14.	Comment effectuer une redirection en PHP ?
 15.	Définir la partie « front-end » et « back-end » d’une application
+
+    => Front-End : Partie interactive d'une application Web, via l'interface utilisateur
+    => Back-End : Couche d'accès aux données d'une application : élaboration d'un espace de stockage pour le projet, création d'une base de données, fournir les informations demandées par les utilisateurs/enregistrer les informations soumises par eux (ex. communication entre serveurs et applications par le biais d'interfaces => API)
+
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
+
+    => Suivi et gestion des changements apportés à un système de fichiers. Peut être linéaire et chronologique ou élaboré en structure arborescente.
+    => Git = outil de dévelopemment qui gère les changements apportés au code source d'une application. Garde une trace de chaque changement apporté au code.
+
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
+
+    => Content Management System = permet de créer et d'éditer un site web sans connaissances techniques, le but étant la mise en ligne rapide.
+    => Ex. WordPress, Drupal
 
 ## Front-end
 18.	Définir HTML
