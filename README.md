@@ -15,13 +15,13 @@
 ## Général
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
     
-    => Environnement de développement PHP => compilateur/moteur d'exécution (Zend Engine) + Serveur Web HTTP (Apache) + Serveur de base de données (MySQL) 
-    = technologie AMP
+    => Environnement de développement PHP. 
+    Compilateur/moteur d'exécution (Zend Engine) + Serveur Web HTTP (Apache) + Serveur de base de données (MySQL) = technologie AMP
     => Logiciels qui permettent ce contexte : Laragon, WAMP
 
 2.	Qu’est-ce qu’un algorithme ?  
 
-    => Suite d'instructions et/ou d'opérations, finie et non ambiguë, pour résoudre un problème et en obtenir une solution.
+    => Suite d'instructions et/ou d'opérations, finie et non ambiguë, pour résoudre un problème et en obtenir une solution. 
     Traduit dans un language informatique pour élaborer un programme.
 
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
@@ -32,7 +32,8 @@
 
 4.	Qu’est-ce que la portée d’une variable ?
 
-    => Champ d'accessibilité dans laquelle elle peut être utilisée. Variable disponible que dans le contexte dans lequel elle a été déclarée.
+    => Champ d'accessibilité dans laquelle elle peut être utilisée. 
+    Variable disponible que dans le contexte dans lequel elle a été déclarée.
     Portée se limite à son bloc. 
     Syn. : Scope
     Hoisting = variable a une portée hors de son Scope (ex. Var en JS)
@@ -46,10 +47,10 @@
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
 
     => - Entier (Integer) => ex. 7
-    - Réel (Float ou Double) => ex. 3.5
-    - Booléen (Boolean) => True/False
-    - Chaîne de caractère (String) => "Ce foie gras n'est quand même vraiment pas terrible Charles-Édouard"
-    - Variable sans valeur => null
+    - Réel (Float ou Double) = ex. 3.5
+    - Booléen (Boolean) = True/False
+    - Chaîne de caractère (String) = "Ce foie gras n'est quand même vraiment pas terrible Charles-Édouard"
+    - Variable sans valeur = null
 
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
@@ -63,10 +64,10 @@
 
 9.	Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
 
-    => - Structure séquentielle (instructions exécutées l'une après l'autre selon un ordre) => ex. Permuter deux entiers
-    - Structure alternative (instructions exécutées selon les réponses à des conditions) => ex. If, If/Else, Switch etc.
-    - Structure itérative (portion de code à exécuter plusieurs fois de suite - boucles) => ex. While, For, ForEach
-    - Fonctions (série d'opérations à partir d'arguments-valeurs, passés en paramètres > la fonction renvoie ensuite un résultat, qui est une valeur) => ex. Function/Method en JS
+    => - Structure séquentielle (instructions exécutées l'une après l'autre selon un ordre) = ex. Permuter deux entiers
+    - Structure alternative (instructions exécutées selon les réponses à des conditions) = ex. If, If/Else, Switch etc.
+    - Structure itérative (portion de code à exécuter plusieurs fois de suite - boucles) = ex. While, For, ForEach
+    - Fonctions (série d'opérations à partir d'arguments-valeurs, passés en paramètres > la fonction renvoie ensuite un résultat, qui est une valeur) = ex. Function/Method en JS
 
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
@@ -79,7 +80,9 @@
 15.	Définir la partie « front-end » et « back-end » d’une application
 
     => Front-End : Partie interactive d'une application Web, via l'interface utilisateur
-    => Back-End : Couche d'accès aux données d'une application : élaboration d'un espace de stockage pour le projet, création d'une base de données, fournir les informations demandées par les utilisateurs/enregistrer les informations soumises par eux (ex. communication entre serveurs et applications par le biais d'interfaces => API)
+    => Back-End : Couche d'accès aux données d'une application : élaboration d'un espace de stockage pour le projet, création d'une base de données, 
+    fournir les informations demandées par les utilisateurs/enregistrer les informations soumises par eux 
+    (ex. communication entre serveurs et applications par le biais d'interfaces => API)
 
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 
@@ -100,7 +103,7 @@
 
 19.	Définir CSS
 
-    => Feuilles de style en cascade => language utilisé pour décrire la présentation d'un document HTML => décrit la façon dont les éléments doivent être affichés à l'écran.
+    => Feuilles de style en cascade. Language utilisé pour décrire la présentation d'un document HTML. Décrit la façon dont les éléments doivent être affichés à l'écran.
 
 20.	Définir Javascript
 
@@ -109,13 +112,23 @@
 21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
 23.	Qu’est-ce qu’un sélecteur CSS ?
+
+    => Expression qui indique au navigateur à quelle entité HTML s'applique la règle CSS correspondante
+
 24.	Quelle balise HTML permet de créer un lien hypertexte ?
 
     => <a> => attribut "href=" = destination du lien
 
 25.	Qu’est-ce qu’une requête AJAX ?
 26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
+
+    => ".class"
+    => "#id"
+
 27.	Définir le responsive design
+
+    => Approche de la conception web visant à ce que les pages s'affichent correctement pour toutes les tailles et résolutions d'écran, avec une utilisabilité correcte.
+
 28.	Qu’est-ce que le templating ?
 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
