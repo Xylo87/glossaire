@@ -93,12 +93,26 @@
 
 ## Front-end
 18.	Définir HTML
+
+    => HyperText Markup Language = language de balises pour l'hypertexte. Créer et représenter le contenu d'une page web et sa structure. 
+    Hypertexte = liens qui relient les pages entre elles (internes et externes). Toile, Web.
+    Balises permettent d'afficher les éléments dans un navigateur web. 
+
 19.	Définir CSS
+
+    => Feuilles de style en cascade => language utilisé pour décrire la présentation d'un document HTML => décrit la façon dont les éléments doivent être affichés à l'écran.
+
 20.	Définir Javascript
+
+    => 
+
 21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
 23.	Qu’est-ce qu’un sélecteur CSS ?
 24.	Quelle balise HTML permet de créer un lien hypertexte ?
+
+    => <a> => attribut "href=" = destination du lien
+
 25.	Qu’est-ce qu’une requête AJAX ?
 26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
 27.	Définir le responsive design
