@@ -44,6 +44,13 @@
     Constante = variable statique.
 
 6.	Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation 
+
+    => En PHP, variables permettant d'accéder aux informations transmises par le client au serveur.
+    Toutes de type tableau (regrouper des infos sous forme de clé/valeur).
+    Natives au script PHP.
+    => 8 ($_GET, $_POST, $_COOKIE, $_REQUEST, $_SESSION, $_FILES, $_ENV et $_SERVER)
+    => ex. $_GET > méthode HTTP > contient tous les paramètres transmis au serveur via l'URL de la requête (Query String Parameters)
+
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
 
     => - Entier (Integer) => ex. 7
@@ -74,9 +81,29 @@
     => strlen($CdC)
 
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
+
+    => Moyen de stocker des donnnées côté serveur pour chaque utilisateur, avec un identifiant de session unique (lié aux cookies côté navigateur).
+    Utilisées pour faire persister des infos entre plusieurs pages.
+    Durée limitée (180min par défaut > modulable).
+    => session_start() > démarrer une session pour l'utilisateur  ou récupérer une session préexistante.
+    => ex. Enregistrement de produits en session sur un site d'achat ("Panier").s
+
+
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
+
+    => Mécanisme d'enregistrement et de lecture d'informations sur un client.
+    Fichier texte envoyé par le serveur sur la machine utilisateur (navigateur).
+    Contient l'identifiant d'une session unique, pour faire le lien avec la session utilisateur côté serveur (PHPSESSID).
+    Expire par défaut à la fermeture du navigateur.
+    => Si cookie suppr. ou modif., prochaine requête du client devra démarer une nouvelle session.
+
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
 14.	Comment effectuer une redirection en PHP ?
+
+    => Fonction header("Location:xxx")
+    Envoi d'une nouvelle entête HTTP (réponse) au client.
+        > Redirection = status code HTTP 302
+
 15.	Définir la partie « front-end » et « back-end » d’une application
 
     => Front-End : Partie interactive d'une application Web, via l'interface utilisateur
@@ -107,7 +134,10 @@
 
 20.	Définir Javascript
 
-    => 
+    => Language de programmation qui permet de créer du contenu mis à jour de façon dynamique.
+    Sites Web interactifs.
+    S'applique à un document HTML.
+    Troisième couche de technologie standard du Web.
 
 21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
