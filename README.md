@@ -47,7 +47,7 @@
 
     => En PHP, variables permettant d'accéder aux informations transmises par le client au serveur.
     Toutes de type tableau (regrouper des infos sous forme de clé/valeur).
-    Natives au script PHP.
+    Natives au script PHP + accessibles depuis n'importe quel fichier .php si définies
     => 8 ($_GET, $_POST, $_COOKIE, $_REQUEST, $_SESSION, $_FILES, $_ENV et $_SERVER)
     => ex. $_GET > méthode HTTP > contient tous les paramètres transmis au serveur via l'URL de la requête (Query String Parameters)
 
