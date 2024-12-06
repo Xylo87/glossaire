@@ -162,7 +162,15 @@
 28.	Qu’est-ce que le templating ?
 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
+
+    => tableau.push("element")
+
 31.	Qu’est-ce qu’un « media query » ?
+
+    => Une requête média permet de modifier l'apparence d'une application en fonction du type d'appareil (ex. écran etc.) 
+    et de ses caractéristiques (ex. résolution d'écran, largeur de la zone d'affichage etc.).
+        > Permet d'appliquer certains styles CSS de façon conditionnelle grâce à des règles.
+
 32.	Qu’est-ce qu’un pseudo élément en CSS ?
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
@@ -194,6 +202,10 @@
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
 57.	Qu’est-ce qu’un « autoload » ?
 58.	Comment appelle-t-on en français les « getters » et les « setters » ?
+
+    => Getters = Accesseurs
+    Setters = Mutateurs
+
 59.	Qu’est-ce que la sérialisation en PHP ? 
 
 ## Architecture 
@@ -313,15 +325,15 @@ h.	Concaténer 2 chaînes de caractères
  
 ## English
 1)	What does JavaScript enable you to do on a website ?
-a.	Add interactive behavior and dynamic content
+a.	Add interactive behavior and dynamic content <=
 b.	Define the layout and design of web pages
 c.	Handle server-side operations
 2)	Which programming language is primarily used for server-side web development ?
-a.	PHP
+a.	PHP <=
 b.	JavaScript
 c.	HTML
 3)	What is the purpose of a web browser ?
-a.	To render and display web pages
+a.	To render and display web pages <=
 b.	To execute serve-side code
 c.	To manage databases
 4)	What is the difference between GET and POST methods in HTTP ?
@@ -329,7 +341,7 @@ a.	GET retrieves data from a server, while POST submits data to a server
 b.	GET submits data to a server, while POST retrieves data from a server
 c.	GET and POST methods are interchangeable
 5)	What is the purpose of version control systems (e.g., Git) in web development ?
-a.	To track changes and manage collaborative development
+a.	To track changes and manage collaborative development <=
 b.	To optimize website loading speed
 c.	To handle server-side scripting
 6)	What is the purpose of a framework in web development ?
