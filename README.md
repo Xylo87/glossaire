@@ -98,6 +98,13 @@
     => Si cookie suppr. ou modif., prochaine requête du client devra démarer une nouvelle session.
 
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
+
+    => Permettent toutes deux d'inclure le contenu d'un autre fichier appelé dans un fichier PHP. 
+    Différence si le fichier ne peut être inclus pour une quelconque raison (fichier introuvable, indisponible etc.).
+    - Include = simple avertissement de PHP, reste du script s'exécute.
+    - Require = erreur fatale, l'exécution du script est stoppée.
+            > include_once, require_once (fichier externe ne peut être inclus qu'une seule fois).
+
 14.	Comment effectuer une redirection en PHP ?
 
     => Fonction header("Location:xxx")
@@ -175,6 +182,10 @@
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
 
+    => Méthodes GET et POST. Requêtes HTTP.
+        > GET = données envoyées au serveur sont écrites directement dans l'URL. Demande de représentation de la ressource spécifiée; utilisée pour récupérer des données.
+        > POST = données envoyées au serveur sont écrites dans la requête elle-même (corps de la requête HTTP). Utilisée pour envoyer une entité vers la ressource indiquée.
+
 ## UX UI
 35.	Quelle est la différence entre UX Design et UI Design ?
 36.	Qu’est-ce qu’un wireframe ? 
@@ -201,6 +212,9 @@
 55.	Définir le chaînage de méthodes
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
 57.	Qu’est-ce qu’un « autoload » ?
+
+    => Fonction qui permet aux classes définies dans des fichers externes d'être automatiquement chargées dans le script principal en PHP, sans avoir à les inclure manuellement.
+
 58.	Comment appelle-t-on en français les « getters » et les « setters » ?
 
     => Getters = Accesseurs
