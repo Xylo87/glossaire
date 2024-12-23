@@ -188,13 +188,37 @@
 
 ## UX UI
 35.	Quelle est la différence entre UX Design et UI Design ?
+
+    => - UI = Interface utilisateur (design graphique) > interface agréable > position des éléments graphiques et textuels > faciliter navigation
+    - UX = Expérience utilisateur (interface ergonomique) > analyse du ressenti des utilisateurs avec l'interface web (divers parcours possibles des utilisateurs) > expérience agréable + faciliter la recherche d'infos > accessibilité (apparence cohérente, fonctionnalités intuitives...) > Responsive en fait partie intégrante 
+
 36.	Qu’est-ce qu’un wireframe ? 
+
+    => Maquette fil de fer d'une interface > Schéma de la structure et des fonctionnalités d'une application > Recherche d'ergonomie 
+
 37.	Qu’est-ce qu’un prototype ? 
+
+    => Maquette fonctionnelle > permet de simuler le fonctionnement d'une application web (UX, expérience utilisateur)
+
 38.	Qu’est-ce que la hiérarchie visuelle en UI Design ?
+
+    => Objectif de guider l'utilisateur à travers l'application > Éléments de design tels que la taille, la couleur et la position pour l'importance des éléments de l'interface utilisateur (ex. parcours en F ou en E de l'application > lecture en E pour un blog)
+
 39.	Qu’est-ce que l’accessibilité en UX Design ? 
+
+    => Conception d'interfaces compéhensibles et opérables par le plus grand nombre, y compris les utilisateurs ayant des besoin spécifiques (handicaps visuels, physiques...) 
+        > principes POUR = perceptible, opérable (interface), compréhensible (contenu), robuste (compatibles avec diverses techologies d'assistance)
+        (((> textes alt. pour les images, compat. lecteurs d'écran, couleurs contrastées, compat. techno. futures...)))
+
 40.	Qu’est-ce qu’une grille de mise en page ?
+
+    => Axes horizontaux et verticaux pour structurer le contenu > Armature que laquelle organiser textes et images
+
 41.	Qu’est-ce que la notion d’affordance en UX Design ?
 42.	Qu’est-ce qu’un « mobile first design » ?
+
+    => Concevoir une application en priorisant la version mobile et en adaptant progressivement le web design pour les écrans plus larges, au delà du Responsive Design
+        > concept contraire à l'approche qui consistait à "dégrader" progressivement un site web pour l'adapter à l'affichage sur Smartphone 
 
 ## Programmation orientée objet (POO)
 43.	Donner une définition de la programmation orientée objet 
@@ -259,13 +283,37 @@ c.	SGBD (donner 2 exemples de SGBD)
 81.	Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
 82.	Quelles sont les clauses qui permettent de :
 a.	Insérer un nouvel enregistrement dans une table
+
+    => INSERT INTO
+
 b.	Modifier un enregistrement dans une table
+
+    => UPDATE
+
 c.	Supprimer un enregistrement dans une table
+
+    => DELETE FROM
+
 d.	Supprimer la base de données
+
+    => DROP DATABASE
+
 e.	Filtrer les résultats d’une requête SQL
+
+    => WHERE
+
 f.	Trier les résultats d’une requête SELECT
+
+    => ORDER BY
+
 g.	Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique
-h.	Concaténer 2 chaînes de caractères 
+
+    => GROUP BY
+
+h.	Concaténer 2 chaînes de caractères
+
+    => CONCAT
+
 83.	Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
 
 ## Symfony
@@ -351,7 +399,7 @@ a.	To render and display web pages <=
 b.	To execute serve-side code
 c.	To manage databases
 4)	What is the difference between GET and POST methods in HTTP ?
-a.	GET retrieves data from a server, while POST submits data to a server
+a.	GET retrieves data from a server, while POST submits data to a server <=
 b.	GET submits data to a server, while POST retrieves data from a server
 c.	GET and POST methods are interchangeable
 5)	What is the purpose of version control systems (e.g., Git) in web development ?
@@ -359,14 +407,14 @@ a.	To track changes and manage collaborative development <=
 b.	To optimize website loading speed
 c.	To handle server-side scripting
 6)	What is the purpose of a framework in web development ?
-a.	To provide a structured environment for building web applications
+a.	To provide a structured environment for building web applications <=
 b.	To handle network protocols and data transfer
 c.	To create visual designs and layouts for websites
 7)	What does NoSQL stand for ?
-a.	Not Only SQL
+a.	Not Only SQL <= (Structured Query Language)
 b.	Non-Structured Query Language
 c.	New Object-Oriented Language
 8)	Which of the following is a characteristic of NoSQL databases ?
 a.	Strict schema enforcement
 b.	Support for complex transactions
-c.	Scalability and flexible data models
+c.	Scalability and flexible data models <=
