@@ -146,7 +146,12 @@
     S'applique à un document HTML.
     Troisième couche de technologie standard du Web.
 
-21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
+21.	Définir JSON. Dans quel contexte ce format est-il utilisé ?
+
+    => JavaScript Object Notation > Format de données et de fichier > Échange de données d'une application web entre un navigateur et un serveur > Format lisible, représente les données structurées sous forme de paires clés/valeurs (valeur = nb, bool, null, obj, array, CdC...)
+    => Transmettre des données du serveur au navigateur pour afficher du contenu / Transmettre au serveur des données entrées par un utilisateur sur une appli web
+        > S'apparente à un obejt JS ou un tableau associatif PHP > Grand volume de données 
+
 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
 23.	Qu’est-ce qu’un sélecteur CSS ?
 
@@ -289,6 +294,9 @@
 ## Architecture 
 60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
 61.	Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern
+
+
+
 62.	Qu’est-ce que l’architecture MVC ?
 63.	Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
 64.	Quels sont les avantages de l’architecture MVC ?
