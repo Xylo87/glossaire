@@ -222,19 +222,59 @@
 
 ## Programmation orientée objet (POO)
 43.	Donner une définition de la programmation orientée objet 
+
+    => Modèle qui repose sur le concept de classes et d'objets > Structurer un programme en éléments de codes simples, modulables et réutilisables (classes) utilisés pour créer des instances individuelles d'objets
+        > Objets = "choses" modélisées dans des programmes; but est de représenter le monde réel en code
+
 44.	Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
+
+    => Ensemble d'attributs et de méthodes communs à des objets > Attributs représentent l'état des objets et les méthodes représentent leurs comportements > Catégorie d'objets > Modèles
+    => Utilisation du mot-clé "Class" suivi du nom de la classe
+
 45.	Qu’est-ce qu’un objet ?
+
+    => Instance d'une classe > Contient ses données/propriétés/attributs/caractéristiques et ses méthodes (état et comportement)
+
 46.	Définir la notion de propriété / attribut / méthode
+
+    => Propriétés/Attributs = caractéristiques d'une classe (ex. couleur, marque, modèle pour un objet "voiture")
+    => Méthodes = comportements possibles d'un objet, définis dans une classe > S'apparentent à une fonction
+
 47.	Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité
+
+    => Portée d'accès des attributs et méthodes d'une classe (intérieur et extérieur d'une classe)
+    => - Public = accessibles de n'importe où (sans restriction)
+    - Private = accessibles uniquement à l'intérieur de la classe > ne peuvent être modifiés (set) ou utilisés en dehors de la classe
+    - Protégé = accessibles à l'intérieur de la classe et dans classes qui en héritent (sous-classes, classes-"enfants", classes dérivées) > inaccessibles à l'extérieur
+
 48.	Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
+
+    => Mot-clé "new" permet d'instancier une classe, créer un objet à partir d'elle
+
 49.	Qu’est-ce que l’encapsulation ?
+
+    => Mécanisme qui empêche de modifier des objets ou de leur faire adopter tel ou tel comportement (accès aux méthodes) autrement que par les moyens proposés (portée des attributs et méthodes) 
+        > But = garantir l'intégrité des objets
+
 50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple
 51.	Définir l’opérateur de résolution de portée
 52.	Définir une méthode / propriété statique
+
+    => Associées à la classe elle-même, et non à l'instance de la classe > Peuvent être utilisés sans créer d'objet
+        > Méthodes peuvent être appelées directement sur la classe
+        > Ex. utilisation = - Class::$variable = ? (réassigner la variable définie dans la classe)
+        - Class::methode() (utiliser la méthode définie dans la classe)
+
 53.	Définir le polymorphisme en POO
 54.	Définir une méthode / classe abstraite ?
+
+    => 
+
 55.	Définir le chaînage de méthodes
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
+
+    => Permet de définir des éléments d'une classe qui seront convertis en chaîne de caractères > Personnaliser l'affichage d'un "$objet" avec un echo > Méthode doit être définie dans la classe
+
 57.	Qu’est-ce qu’un « autoload » ?
 
     => Fonction qui permet aux classes définies dans des fichers externes d'être automatiquement chargées dans le script principal en PHP, sans avoir à les inclure manuellement.
@@ -269,18 +309,40 @@ b.	Relation
 c.	Cardinalité
 d.	Clé primaire / clé étrangère
 72.	Que devient une relation de type « Many To Many » dans le modèle logique de données ?
+
+    => Donne lieu à une table associative entre deux entités > Relation intermédiaire > Clés étrangères pour chacune des deux entités impliquées dans la relation
+
 73.	Qu’est-ce qu’une base de données ?
+
+    => Système qui permet d'accéder à une ensemble organisé de données 
+
 74.	Définir les notions suivantes : 
 a.	SQL
 b.	MySQL
 c.	SGBD (donner 2 exemples de SGBD)
-75.	Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___
+75.	Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées enregistrements et de colonnes appelées champs.
 76.	Quelle est la différence entre une base de données relationnelle et non relationnelle ?
 77.	Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?
 78.	A quoi sert une vue dans une base de données ?
 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
 80.	Quelles sont les fonctions d’agrégation en SQL ?
+
+    => Opérations sur une ensemble d'enregistrements > 
+    - AVG() = calculer moyenne sur un ensemble d'enregistrements
+    - COUNT() = compter le nombre d'enregistrements sur une table ou une colonne
+    - MAX() = récupérer la valeur maximum d'une colonne sur un ensemble de lignes
+    - MIN() = récupérer la valeur minimum
+    - SUM() = calculer la somme sur un ensemble d'enregistrements
+                > Prennent leur sens avec l'utilisation d'un GROUP BY
+
 81.	Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
+
+    => 4 opérations de base dans la gestion de BdD > 
+    - Create (INSERT en SQL)
+    - Read (SELECT en SQL)
+    - Update (UPDATE en SQL)
+    - Delete (DELETE en SQL)
+
 82.	Quelles sont les clauses qui permettent de :
 a.	Insérer un nouvel enregistrement dans une table
 
