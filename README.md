@@ -293,13 +293,35 @@
 
 ## Architecture 
 60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
+
+    => - Le client (navigateur ou autre application) demande des services (exécuter des actions) ou des ressources (informations > récupérer des données) à des serveurs > Client envoie des requêtes
+    - Le serveur reçoit les requêtes et y répond en fournissant les ressources demandées ou en exécutant les actions nécessaires > Gestion des données et de la sécurité > Serveur peut être spécilisé (base de données, web (fournisseur de pages web > fichiers HTML), application etc.)
+            > Client reçoit le réponse et l'affiche à l'utilisateur ou l'utilise pour d'autres actions
+    => Une requête HTTP > HyperText Transfer Protocol > URL (Uniform Resource Location) = adresse de la ressource sur le serveur > Réponse du serveur = code HTML d'une page web (par ex.)
+        > méthode HTTP = GET, POST, PUT (MàJ), DELETE (par ex.) > en-têtes requête (cookies (clé d'une session) par ex.) > corps requête (HTML ou formulaire par ex.) > ex. code statut HTTP :
+        - 200 OK (requête réussie, réponse envoyée)
+        - 404 NOT FOUND (ressource demandée introuvable)
+        - 500 INTERNAL SERVER ERROR
+    => Version sécurisée de l'HTTP > Ajout d'un chiffrement pour protéger les données lors de l'échange > Chiffrées avant d'être envoyées; interception ou manipulation difficiles par un tiers
+
 61.	Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern
 
-
+    => Solution réutilisable pour la conception d'applications > Approche standardisée/générique et bonnes pratiques pour des situations similaires > Rendre le code flexible (faciliter sa maintenance et son évolution) > Indépendante d'un language spécifique
 
 62.	Qu’est-ce que l’architecture MVC ?
+
+    => Séparation des différentes responsabilités d'une application > Approche pour organiser le code > Utilisée principalement pour des applications web > Destinée aux interfaces graphiques
+
 63.	Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
+
+    => - Model : donne une représentation des données liées > Responsable de l'accès aux données (lecture, écriture et MàJ)
+    - View : affichage des données fournies par le modèle > Affichage utilisateur, partie visible de l'interface graphique
+    - Controller : traite les actions de l'utilisateur > contrôle les modifications des données et met à jour la vue > Intermédiaire entre Model et View
+
 64.	Quels sont les avantages de l’architecture MVC ?
+
+    => Séparation des préoccupations (composants) > Facilite la gestion du code, sa maintenance et les tests > Modèle réutilisable avec différentes vues/interfaces (sans toucher à la logique de gestion des données)
+
 65.	Existe-t-il des variantes à l’architecture MVC ?
 66.	Qu’est-ce qu’une API ? Définir l’architecture REST
 
@@ -331,6 +353,11 @@ c.	SGBD (donner 2 exemples de SGBD)
 75.	Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées enregistrements et de colonnes appelées champs.
 76.	Quelle est la différence entre une base de données relationnelle et non relationnelle ?
 77.	Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?
+
+    => Commande qui permet de joindre 2 tables pour une requête qui nécessite des données contenues dans l'une et l'autre
+    => - "Inner Join" > Combiner les données de 2 tables au moyen, généralement, d'une colonne partagée
+    *INCOMPLET*
+
 78.	A quoi sert une vue dans une base de données ?
 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
 80.	Quelles sont les fonctions d’agrégation en SQL ?
@@ -414,8 +441,17 @@ h.	Concaténer 2 chaînes de caractères
 104.	Qu’est-ce que le RGPD ?
 105.	Quel est son objectif principal ?
 106.	Quelle est la date d’entrée en vigueur du RGPD ?
+
+    => Entrée en application dans tous les pays membres de l'Union Européenne le 25 mai 2018
+
 107.	Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
 108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
+
+    => La CNIL (Commission nationale de l'Informatique et des Libertés)
+    - Surveille et contrôle > Conformité des entreprises et orgas avec le RGPD > Audits, enquêtes et demandes d'infos
+    - Conseil et sensibilisation > Aide aux entreprises pour son application correcte > Informe la public sur ses droits en matière de protection des données
+    - Sanctions > amendes et mesures correctives (ex. imposition d'un changement dans la gestion/traitement des données)
+
 109.	Quel est le consentement valide selon le RPGD ?
 110.	Qu’est-ce qu’une politique de confidentialité ?
 111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
@@ -427,7 +463,10 @@ h.	Concaténer 2 chaînes de caractères
 115.	Quel est l’objectif principal du SEO ?
 116.	Existe-t-il plusieurs types de référencement ? Lesquels ?
 117.	Qu’est-ce que la densité de mots-clés en SEO ?
-118.	Qu’est-ce qu’une balise « alt » ?
+118.	Qu’est-ce qu’un attribut « alt » ?
+
+    => Obligatoire > Contient une description textuelle de l'image > Utile pour les outils de lecture d'écran et si l'image ne peut pas être chargée (ex. lien périmé ou blocage de contenu)
+
 119.	Qu’est-ce que la balise « meta description » ?
 120.	Qu’est-ce que le « nofollow » en SEO ?
 121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
@@ -441,6 +480,16 @@ h.	Concaténer 2 chaînes de caractères
 127.	Qu’est-ce que la gestion de projet ?	
 128.	Qu’est-ce qu’une méthode Agile de gestion de projet ? 
 129.	Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages
+
+    => Technique des priorités en gestion de projets > Permet de classer les tâches et leur exigence en 4 catégories :
+    - Must Have > Absolument nécessaire pour les succès du projet
+    - Should Have > Important, mais pas indispensable
+    - Could have > Souhaitable mais non essentielle
+    - Won't Have > Éléméents non-inclus dans cette phase du projet
+    => - Clarté de priorisation des tâches
+    - Ajustement flexible des priorités en fonctions des ressources et des nouvelles contraintes
+    - Bonne gestion des attentes des parties prenantes en établissant des critères clairs sur le livrable
+
 130.	A quoi sert la méthodologie MVP ? Citer les caractéristiques clés
 131.	Qu’est-ce que la planification itérative ?
 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique
@@ -457,34 +506,34 @@ h.	Concaténer 2 chaînes de caractères
  
 ## English
 1)	What does JavaScript enable you to do on a website ?
-a.	Add interactive behavior and dynamic content <=
+a.	Add interactive behavior and dynamic content *<=*
 b.	Define the layout and design of web pages
 c.	Handle server-side operations
 2)	Which programming language is primarily used for server-side web development ?
-a.	PHP <=
+a.	PHP *<=*
 b.	JavaScript
 c.	HTML
 3)	What is the purpose of a web browser ?
-a.	To render and display web pages <=
+a.	To render and display web pages *<=*
 b.	To execute serve-side code
 c.	To manage databases
 4)	What is the difference between GET and POST methods in HTTP ?
-a.	GET retrieves data from a server, while POST submits data to a server <=
+a.	GET retrieves data from a server, while POST submits data to a server *<=*
 b.	GET submits data to a server, while POST retrieves data from a server
 c.	GET and POST methods are interchangeable
 5)	What is the purpose of version control systems (e.g., Git) in web development ?
-a.	To track changes and manage collaborative development <=
+a.	To track changes and manage collaborative development *<=*
 b.	To optimize website loading speed
 c.	To handle server-side scripting
 6)	What is the purpose of a framework in web development ?
-a.	To provide a structured environment for building web applications <=
+a.	To provide a structured environment for building web applications *<=*
 b.	To handle network protocols and data transfer
 c.	To create visual designs and layouts for websites
 7)	What does NoSQL stand for ?
-a.	Not Only SQL <= (Structured Query Language)
+a.	Not Only SQL *<=* (Structured Query Language)
 b.	Non-Structured Query Language
 c.	New Object-Oriented Language
 8)	Which of the following is a characteristic of NoSQL databases ?
 a.	Strict schema enforcement
 b.	Support for complex transactions
-c.	Scalability and flexible data models <=
+c.	Scalability and flexible data models *<=*
