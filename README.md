@@ -327,17 +327,41 @@
 
 ## Modélisation - Base de données
 67.	Qu’est-ce que la modélisation de données ? Définir la méthode Merise
+
+    => Concevoir un système d'informations en mettant l'accent sur la gestion des données > Création d'une représentation structurée des données nécessaires au système
+    => Approche étape par étape pour garantir l'efficacité et la cohérence des données tout au long du processus de conception du système > Décrire les données, leurs relations et les organiser de façon à faciliter leur gestion et leur exploitation
+
 68.	Quelles sont les 3 étapes principales de la méthode Merise ? 
-a.	Analyse, conception et réalisation
+a.	Analyse, conception et réalisation *<=*
 b.	Planification, exécution et contrôle
 c.	Création, modification et suppression
 69.	Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?
+
+    => Permet de décrire les données de manière abstraite, en mettant l'accent sur les entités, leurs attributs et leurs relations > Représentation globale du système
+
 70.	Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?
+
+    => Traduit le MCD en un modèle plus détaillé, en précisant notamment les contraintes logiques (ex. clés étrangères) > Proche de la manière dont les données seront stockées en base
+
 71.	Donner la définition des mots suivants :
 a.	Entité
+
+    => Représente un objet/concept/chose du monde réel que l'on souhaite modéliser en système d'informations > Objet identifiable (id) et doté d'attributs > Succeptible d'interagir avec d'autres entités > Unité d'information avec une existence propre > Point de départ pour construire BdB et son organisation
+
 b.	Relation
+
+    => Lien/interaction entre plusieurs entités > modélisation des associations/dépendances entre plusieurs objets
+
 c.	Cardinalité
+
+    => Type de relation > Décrit le nombre de fois qu'une entité peut être liée à une autre dans une relation (1,1 - 1,N - N,N)
+
 d.	Clé primaire / clé étrangère
+
+    => Organisation et liaison logique des données
+    - Clé primaire = identifiant unique pour chaque entité
+    - Clé étrangère = attribut de liaison d'une entité avec une autre entité > Référence de la clé primaire d'une autre entité
+
 72.	Que devient une relation de type « Many To Many » dans le modèle logique de données ?
 
     => Donne lieu à une table associative entre deux entités > Relation intermédiaire > Clés étrangères pour chacune des deux entités impliquées dans la relation
@@ -348,10 +372,26 @@ d.	Clé primaire / clé étrangère
 
 74.	Définir les notions suivantes : 
 a.	SQL
+
+    => Structured Query Language > language utilisé pour interroger, modifier et gérer les données dans une base
+
 b.	MySQL
+
+    => Outil logiciel qui permet de stocker et de gérer les données en utilisant SQL
+
 c.	SGBD (donner 2 exemples de SGBD)
-75.	Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées enregistrements et de colonnes appelées champs.
+
+    => Système de gestion de base de données
+    => MongoDB (NoSQL orientée documents) / Oracle Database (relationnel)
+
+75.	Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées *enregistrements* et de colonnes appelées *champs*.
 76.	Quelle est la différence entre une base de données relationnelle et non relationnelle ?
+
+    => Manière dont les données sont organisées et stockées
+        > - Relationnelle = données stockées sous forme de tables (lignes/colonnes) (> table = entité / colonne = attribut / enregistrement = valeur) (> relations = clés primaires et étrangères) (> language = SQL) > Orga structurée et intégrité garantie par les contraintes mais moins flexibles pour données non structurées (documents, données multimédias) et moins perf pour volumes de données important
+        - Non-relationnelle = stockage flexible (ex. documents, clés-valeur) (> languages spécifiques à chaque BdD NoSQL) > Moins de support pour les requêtes complexes (moins de structure)
+        > Choix dépend des besoins du projet et de la structure des données
+
 77.	Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?
 
     => Commande qui permet de joindre 2 tables pour une requête qui nécessite des données contenues dans l'une et l'autre
@@ -412,6 +452,10 @@ h.	Concaténer 2 chaînes de caractères
     => CONCAT
 
 83.	Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
+
+    => Utilisation de l'extension PDO (PHP Date Objects) > Méthode flexible qui utilise des exceptions pour gérer les erreurs de connexion > Interface orientée objet pour effectuer des requêtes SQL (méthodes spécifiques) > Utilisation des requêtes préparées pour se protéger contre les attaques par injection SQL
+    => PDO est une classe native à PHP
+
 
 ## Symfony
 84.	Qu’est-ce que Symfony ?
