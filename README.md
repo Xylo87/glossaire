@@ -273,7 +273,7 @@
 53.	Définir le polymorphisme en POO
 54.	Définir une méthode / classe abstraite ?
 
-    => 
+    => *INCOMPLET* 
 
 55.	Définir le chaînage de méthodes
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
