@@ -184,6 +184,11 @@
         > Permet d'appliquer certains styles CSS de façon conditionnelle grâce à des règles.
 
 32.	Qu’est-ce qu’un pseudo élément en CSS ?
+
+    => Mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle.
+    Ex. ::first-line permet de ne cible que la première ligne d'un élément visé par le sélecteur.
+    Autre ex. ::before / ::first-letter / ::selection (appliquer des règles CSS à une portion du document sélectionné par l'utilisateur, via la souris ou un dispositif de pointage).
+
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
 
@@ -262,6 +267,29 @@
         > But = garantir l'intégrité des objets
 
 50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple
+
+    => Permet à une classe (appelée classe fille ou sous-classe) d'hériter des propriétés et des méthodes d'une autre classe (appelée classe parent ou superclasse).
+    Permet réutilisation du code et la création de hiérarchies de classes.
+    Utilisation des méthodes et propriétés "publiques" ou "protégées" > Classe fille peut redéfinir ou ajouter de nouvelles méthodes et/ou propriétés.
+    
+    Ex. 
+        namespace App;
+
+        class Controller
+            
+            public function parler() {
+                code...
+            }
+
+        
+        use App\AbstractController
+
+        class HomeController extends Controller
+            
+            public function parler() {
+                rédéfinition du code si besoin...
+            } 
+
 51.	Définir l’opérateur de résolution de portée
 52.	Définir une méthode / propriété statique
 
@@ -273,7 +301,8 @@
 53.	Définir le polymorphisme en POO
 54.	Définir une méthode / classe abstraite ?
 
-    => *INCOMPLET* 
+    => Classe qui ne peut être directement instanciée mais qui peut contenir des méthodes utilisables (par héritage notamment).
+    => Méthode déclarée mais non implémentée > Doivent être implémentées par les classes filles.
 
 55.	Définir le chaînage de méthodes
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
@@ -324,6 +353,13 @@
 
 65.	Existe-t-il des variantes à l’architecture MVC ?
 66.	Qu’est-ce qu’une API ? Définir l’architecture REST
+
+    => Ensemble de règles et de méthodes qui permettent à différentes applications de communiquer entre elles.
+    Permet à une application d'envoyer des demandes à une autre application et de recevoir des données en réponse (sans explication de la procédure de traitement), données qui peuvent ensuite être exploitées au sein de la première application.
+    => Architecture REST repose sur l'utilisation des méthodes HTTP "GET, POST, PUT, DELETE" pour communiquer avec un serveur API.
+    Les ressources sont identifiables par des URLs.
+    Les données sont généralement récupérées au format JSON.
+    Ex. Récupération des derniers tweets d'un utilisateur donné sur une application (envoi d'une requête à l'API de Twitter, renvoi des tweets sous forme de données que la première appli peut afficher).
 
 ## Modélisation - Base de données
 67.	Qu’est-ce que la modélisation de données ? Définir la méthode Merise
@@ -471,13 +507,36 @@ h.	Concaténer 2 chaînes de caractères
 
 ## Sécurité
 94.	Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
+
+    => Attaquer une base de données en injectant du code SQL malveillant dans une requête (CRUD).
+    Importance de filtrer correctement les entrées utilisateurs (ici, notamment, les URL via un champ de recherche).
+    => Utilisation de requêtes préparées > séparent la logique/structure de la requête SQL ("placeholders") et les données ("prepare" > "execute").
+
 95.	Qu’est-ce que la faille XSS ? Comment s’en prémunir ?
+
+    => "Cross-Site Scripting" > injection de code malveillant (généralement du JavaScript) dans une page web vue par d'autres utilisateurs > code exécuté par le navigateur victime (ex. manipuler le contenu de la page).
+    => Le filtrage des champs de formulaires HTML en PHP permet notamment de se prémunir des injections XSS, en validant ou en assainissant les données saisies par l'utilisateur avant de les utiliser, afin de s'assurer qu'elles respectent un format attendu et qu'elles ne contiennent pas de code malveillant.
+
 96.	Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?
 97.	Définir l’attaque par force brute et l’attaque par dictionnaire
+
+    => Attaque qui consite à essayer toutes les combinaisons possibles de mot de passe de manière automatisée > Efficace si MdP est faible ou court.
+    =>  Méthode d'attaque avec essais d'une liste préétablie de mots courants, de combinaisons ou de phrases pour deviner un mot de passe > Plus rapide qu'une attaque par force brute car l'attaque se concentre sur des mots de passe probables (mots simples, combinaisons courantes etc.).
+
 98.	Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement
 99.	A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
+
+    => Authentification = processus de vérification de l'identité d'un utilisateur lors de la connexion à une application, pour pouvoir accéder aux fonctionnalités de cette dernière > Demande d'un identifiant (nom d'utilisateur, e-mail etc.) et d'un mot de passe.
+    => Processus qui détermine les permissions (fonctionnalités) et les ressources auxquelles un utilisateur donné a accès. Ex. Utilisateur/Modérateur/Administrateur
+
 100.	Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage
+
+    => 
+
 101.	Qu’est-ce qu’une politique de mots de passe forts ?
+
+    =>
+
 102.	Qu’est-ce que l’hameçonnage ?
 103.	Définir la « validation des entrées »
 
@@ -512,6 +571,9 @@ h.	Concaténer 2 chaînes de caractères
     => Obligatoire > Contient une description textuelle de l'image > Utile pour les outils de lecture d'écran et si l'image ne peut pas être chargée (ex. lien périmé ou blocage de contenu)
 
 119.	Qu’est-ce que la balise « meta description » ?
+
+    =>
+
 120.	Qu’est-ce que le « nofollow » en SEO ?
 121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
 122.	Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?
@@ -539,6 +601,9 @@ h.	Concaténer 2 chaînes de caractères
 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique
 133.	Qu’est-ce qu’une réunion de revue de projet ?
 134.	Qu’est-ce qu’un livrable dans un projet ? 
+
+    => 
+
 135.	Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux
 136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
 137.	Qu’est-ce que l’intégration continue ? 
