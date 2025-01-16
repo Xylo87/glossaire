@@ -531,11 +531,24 @@ h.	Concaténer 2 chaînes de caractères
 
 100.	Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage
 
-    => 
+    => Processus qui transforme un MdP en une série de caractères appelée "empreinte" ou "hash". 
+    Processus irréversible (du moins pour les algorithmes de hachage forts...) > Sécuriser un mot de passe de sorte que même si quelqu'un accède à la base de données où il est stocké et haché, il ne puisse
+    retrouver le mot de passe original.
+    => - Algorithmes de hachage faibles : + md5
+    + sha256
+    - Algorithmes de hachage forts : + bCrypt
 
 101.	Qu’est-ce qu’une politique de mots de passe forts ?
 
-    =>
+    => Ensemble de règles et de recommandations pour garantir que les MdP choisis par les utilisateurs soient suffisamment complexes et difficiles à casser par des attaques.
+    Renforcer la sécurité des comptes et des systèmes.
+    La CNIL recommande la création d'un mot de passe selon certains critères : - 12 caractères ou plus
+    - au moins un nombre
+    - au moins un signe de ponctuation ou caractère spécial
+    - au moins une majuscule
+    Le mot de passe ne doit pas contenir d'informations "évidentes" (infos personnelles faciles à deviner).
+    Les mots de passe doivent être changés régulièrement (3 à 6 mois par exemple).
+    Il est déconseillé de réutiliser les mots de passe pour un même compte (en cas de réinitialisation).
 
 102.	Qu’est-ce que l’hameçonnage ?
 103.	Définir la « validation des entrées »
@@ -572,7 +585,11 @@ h.	Concaténer 2 chaînes de caractères
 
 119.	Qu’est-ce que la balise « meta description » ?
 
-    =>
+    => Balise + attribut HTML qui décrivent le contenu d'une page web.
+    Placé dans l'entête de la page > Offrir un résumé clair et concis du contenu de la page pour les moteurs de recherche et inciter les utilisateurs à visiter l'application lorsque la descritpion
+    apparaît dans les résultats (peut améliorer le taux de clics > CTR) > Pertinente et engageante pour attirer l'attention de l'utilisateur.
+    Ex. <meta name="description" content="ceci est une description">
+
 
 120.	Qu’est-ce que le « nofollow » en SEO ?
 121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
@@ -602,7 +619,10 @@ h.	Concaténer 2 chaînes de caractères
 133.	Qu’est-ce qu’une réunion de revue de projet ?
 134.	Qu’est-ce qu’un livrable dans un projet ? 
 
-    => 
+    => Produit ou résultat qui doit être fourni à la fin d'une phase ou du projet lui-même.
+    Répond à un besoin ou une exigence définie > Peut être remis à un client/partenaire/partie prenante du projet.
+        > Mesurer les progrès d'un projet et leur acceptation/validation pour déterminer si un projet avance selon les attentes et les objectifs fixés. 
+        > Ex. Version d'une application web
 
 135.	Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux
 136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
