@@ -305,6 +305,9 @@
     => Méthode déclarée mais non implémentée > Doivent être implémentées par les classes filles.
 
 55.	Définir le chaînage de méthodes
+
+    => *INCOMPLET*
+
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
 
     => Permet de définir des éléments d'une classe qui seront convertis en chaîne de caractères > Personnaliser l'affichage d'un "$objet" avec un echo > Méthode doit être définie dans la classe
@@ -436,6 +439,11 @@ c.	SGBD (donner 2 exemples de SGBD)
 
 78.	A quoi sert une vue dans une base de données ?
 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
+
+    => Garantit que les relations entre les tables sont cohérentes.
+    Situation dans laquelle pour chaque information d'une table A qui fait référence à une information d'une table B, l'information référencée existe dans la table B.
+    Compatible avec le fait qu'une clé étrangère puisse être "null" (si un "id" n'est pas "null", il DOIT simplement correspondre à un "id" dans l'autre table).
+
 80.	Quelles sont les fonctions d’agrégation en SQL ?
 
     => Opérations sur une ensemble d'enregistrements > 
