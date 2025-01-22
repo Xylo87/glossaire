@@ -190,6 +190,15 @@
     Autre ex. ::before / ::first-letter / ::selection (appliquer des règles CSS à une portion du document sélectionné par l'utilisateur, via la souris ou un dispositif de pointage).
 
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
+
+    => Framework (librairie) de développement front-end/
+    Ensemble d'outils comme des modèles de boutons, barres de navigation, éléments de formulaire déjà stylisés et prêts à être utilisés.
+    Permet de gagner du temps en s'assurant que le site gère le Responsive Design.
+    => - Foundation
+    - Bulma
+    - Tailwind CSS
+            > chacun a ses propres caractéristiques et approches
+
 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
 
     => Méthodes GET et POST. Requêtes HTTP.
@@ -503,14 +512,39 @@ h.	Concaténer 2 chaînes de caractères
 
 ## Symfony
 84.	Qu’est-ce que Symfony ?
-85.	Sur quel langage de programmation et design pattern repose Symfony ? 
+
+    => Framework PHP open-source.
+    Ensemble de composants pour développer des applications robustes, sécurisées et maintenables.
+        > - Modularité (composants réutilisables)
+        - Flexibilité (personnaliser et étendre les fonctionnalités en fonction des projets)
+        - Performance (rapide, optimisé)
+        - Écosystème (communauté + bundles/extensions)
+
+85.	Sur quel langage de programmation et design pattern repose Symfony ?
+
+    => Symfony repose sur le PHP et le design pattern Model View Controller.
+
 86.	Quelle est la dernière version en date de Symfony ?
+
+    => 7.2.2 (31 décembre 2024)
+
 87.	Qu’est-ce qu’un bundle ? 
 88.	Quel est le moteur de template utilisé par défaut dans Symfony ?
+
+    => Twig
+
 89.	Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
+
+    => ORM - Object Relationnal Mapper
+    *INCOMPLET*
+
 90.	Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
 91.	Que permet le bundle Maker au sein de Symfony ? 
 92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
+
+    => DQL (Doctrine Query Language) > language propre à Doctrine pour interagir avec la BdD
+        > Similaire à SQL mais travaille directement avec les objets et entités définies dans le PHP (plutôt qu'avec les tables en BdD)
+
 93.	Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
 
 ## Sécurité
