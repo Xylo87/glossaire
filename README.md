@@ -474,11 +474,13 @@ c.	SGBD (donner 2 exemples de SGBD)
 82.	Quelles sont les clauses qui permettent de :
 a.	Insérer un nouvel enregistrement dans une table
 
-    => INSERT INTO
+    => INSERT INTO table (...) VALUES ('valeur1', 'valeur2', 'valeur3'...)
 
 b.	Modifier un enregistrement dans une table
 
-    => UPDATE
+    => UPDATE table (...)
+    SET champ/nom_colonne (...) = 'nouvelleValeur'
+    WHERE
 
 c.	Supprimer un enregistrement dans une table
 
