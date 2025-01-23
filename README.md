@@ -531,6 +531,11 @@ h.	Concaténer 2 chaînes de caractères
     => 7.2.2 (31 décembre 2024)
 
 87.	Qu’est-ce qu’un bundle ? 
+
+    => Paquet de fonctionnalités ou de composants modulaires (code, contrôleurs, routes, templates, services, configurations etc.).
+    Réutilisation de code ou de fonctionnalités entre différentes applications.
+    Ex. "Verify Email Bundle" > Bundle pour gérer l'authentification et la gestion des utilisateurs d'une application.
+
 88.	Quel est le moteur de template utilisé par défaut dans Symfony ?
 
     => Twig
