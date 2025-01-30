@@ -320,6 +320,7 @@
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
 
     => Permet de définir des éléments d'une classe qui seront convertis en chaîne de caractères > Personnaliser l'affichage d'un "$objet" avec un echo > Méthode doit être définie dans la classe
+    => Autre ex. = __construct() > Appel de cette méthode à chaque création d'une nouvelle instance de l'objet (initialisations de l'objet)
 
 57.	Qu’est-ce qu’un « autoload » ?
 
