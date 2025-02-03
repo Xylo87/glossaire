@@ -445,7 +445,7 @@ c.	SGBD (donner 2 exemples de SGBD)
 
     => Commande qui permet de joindre 2 tables pour une requête qui nécessite des données contenues dans l'une et l'autre
     => - "Inner Join" > Combiner les données de 2 tables au moyen, généralement, d'une colonne partagée
-    *INCOMPLET*
+    - "Left Join" > Récupérer toutes les lignes de la table de gauche (la 1ère mentionnée) et les lignes correspondantes dans l'autre table > Si aucune correpsondance, la requête renvoie quand même les lignes de la table de gauche, avec des valeurs NULL pour l'autre table => garder les données de la table de gauche, même sans correspondance
 
 78.	A quoi sert une vue dans une base de données ?
 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
