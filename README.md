@@ -153,6 +153,10 @@
         > S'apparente à un obejt JS ou un tableau associatif PHP > Grand volume de données 
 
 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
+
+    => NodeJS > développement de serveurs web ou d'API > notamment basé sur des boucles d'évènements (Event Loop) qui permettent plusieurs opérations simultanées (asynchrone) > Promesses, remédier au "Callback Hell" > Gestion d'un grand nombre de connexions simultanées de manière non-bloquante (ex. Apps en temps réel comme les chats, jeux en ligne et services de streaming)
+        > Frameworks : Adonis, Express etc.
+
 23.	Qu’est-ce qu’un sélecteur CSS ?
 
     => Expression qui indique au navigateur à quelle entité HTML s'applique la règle CSS correspondante
@@ -162,6 +166,9 @@
     => <a> => attribut "href=" = destination du lien
 
 25.	Qu’est-ce qu’une requête AJAX ?
+
+    => Permet une requête HTTP directement depuis du code JavaScript et sans recharger toute la page > Performance : limiter le temps d'attente lorsqu'une ou plusieurs infos de la page doivent être mises à jour par le serveur > Asynchrone > Renvoie d'une promesse (pas données directement)
+
 26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
 
     => ".class"
@@ -172,7 +179,16 @@
     => Approche de la conception web visant à ce que les pages s'affichent correctement pour toutes les tailles et résolutions d'écran, avec une utilisabilité correcte.
 
 28.	Qu’est-ce que le templating ?
+
+    => Utilisation d'un modèle pour générer du contenu HTML dynamique > Ex. Insertion de variables dynamiques dans le Template, ensuite remplacées par des données spécifiques au moment de l'execution => Séparation de la structure de la page des données qui la remplissent
+    Ex. Templating PHP : mise en mémoire tampon avec ```ob_start``` + ```ob_get_clean``` > sauvegarde dans une variable > ```require_once``` de *template.php* 
+    Ex. Twig (moteur de template) + *base.html.twig*/*extends 'base.html.twig'*
+    
+
 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
+
+    => Utilisée lorsque fonction est temporaire et spécifique (ex. setTimeout, map, filter, forEach > fonction fléchée); on peut alors, par exemple, simplement la stocker dans une variable > fonction locale, légère et simple (encapsuler les logiques qui ne seront pas utilisées ailleurs)
+
 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
 
     => tableau.push("element")
@@ -234,6 +250,9 @@
     => Axes horizontaux et verticaux pour structurer le contenu > Armature que laquelle organiser textes et images
 
 41.	Qu’est-ce que la notion d’affordance en UX Design ?
+
+    => Capacité d'un objet ou d'un système à évoquer son utilisation, sa fonction > Réaction spontanée entre un environnement et son utilisateur > Rendre utilisation intuitive dans le cadre du design d'interfaces > Offrir les moyens à l'utilisateur de se servir d'un objet, si possible sans mode d'emploi => "Call to action"
+
 42.	Qu’est-ce qu’un « mobile first design » ?
 
     => Concevoir une application en priorisant la version mobile et en adaptant progressivement le web design pour les écrans plus larges, au delà du Responsive Design
