@@ -61,13 +61,13 @@
 
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
-    => - Tableaux indexés [..., ..., ...]
+    => - Tableaux indexés (..., ..., ...)
     - Tableaux associatifs (
                         clé => valeur
                         clé => valeur
                         clé => valeur
                         )
-    - Tableaux multidimensionnels [..., ..., [..., ..., ...]]
+    - Tableaux multidimensionnels (..., ..., (..., ..., ...))
 
 9.	Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
 
@@ -85,8 +85,8 @@
     => Moyen de stocker des donnnées côté serveur pour chaque utilisateur, avec un identifiant de session unique (lié aux cookies côté navigateur).
     Utilisées pour faire persister des infos entre plusieurs pages.
     Durée limitée (180min par défaut > modulable).
-    => session_start() > démarrer une session pour l'utilisateur  ou récupérer une session préexistante.
-    => ex. Enregistrement de produits en session sur un site d'achat ("Panier").s
+    => session_start() > démarrer une session pour l'utilisateur ou récupérer une session préexistante.
+    => ex. Enregistrement de produits en session sur un site d'achat ("Panier").
 
 
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
@@ -95,7 +95,7 @@
     Fichier texte envoyé par le serveur sur la machine utilisateur (navigateur).
     Contient l'identifiant d'une session unique, pour faire le lien avec la session utilisateur côté serveur (PHPSESSID).
     Expire par défaut à la fermeture du navigateur.
-    => Si cookie suppr. ou modif., prochaine requête du client devra démarer une nouvelle session.
+    => Si cookie suppr. ou modif., prochaine requête du client devra démarrer une nouvelle session.
 
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
 
@@ -202,7 +202,7 @@
 32.	Qu’est-ce qu’un pseudo élément en CSS ?
 
     => Mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle.
-    Ex. ::first-line permet de ne cible que la première ligne d'un élément visé par le sélecteur.
+    Ex. ::first-line permet de ne cibler que la première ligne d'un élément visé par le sélecteur.
     Autre ex. ::before / ::first-letter / ::selection (appliquer des règles CSS à une portion du document sélectionné par l'utilisateur, via la souris ou un dispositif de pointage).
 
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
