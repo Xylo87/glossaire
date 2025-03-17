@@ -319,6 +319,10 @@
             } 
 
 51.	Définir l’opérateur de résolution de portée
+
+    => ::
+        > Permet d'atteindre les attributs et méthodes de classes statiques
+
 52.	Définir une méthode / propriété statique
 
     => Associées à la classe elle-même, et non à l'instance de la classe > Peuvent être utilisés sans créer d'objet
@@ -327,6 +331,11 @@
         - Class::methode() (utiliser la méthode définie dans la classe)
 
 53.	Définir le polymorphisme en POO
+
+    => Permet à une méthode de fonctionner de manière différente selon l'objet qui l'appelle, tout en gardant son nom
+        > Redéfinition d'une méthode héritée par une classe enfant (polymorphisme d'héritage)
+        > Implémentation d'une méthode de la classe parente (polymorphisme d'interface)
+
 54.	Définir une méthode / classe abstraite ?
 
     => Classe qui ne peut être directement instanciée mais qui peut contenir des méthodes utilisables (par héritage notamment).
@@ -334,7 +343,10 @@
 
 55.	Définir le chaînage de méthodes
 
-    => *INCOMPLET*
+    => Exécution de plusieurs méthodes d'affilée 
+        > Opérateur d'objet pour chaîner différentes méthodes 
+        > Ex. $objet->methode1()->methode2()
+    => Chaque méthode doit retourner un objet pour passer à la suivante
 
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
 
@@ -351,6 +363,12 @@
     Setters = Mutateurs
 
 59.	Qu’est-ce que la sérialisation en PHP ? 
+
+    => Processus de conversion d'un objet ou d'une donnée complexe (ex. Tableau) en une chaîne de caractères, afin de facilement le stocker
+    ou le transmettre (à une base de données par exemple) et de pouvoir le récupérer plus tard sous sa forme d'origine
+        > Désérialisation 
+    => serialize() - deserialize()
+    => similaire au format JSON > communication entre applications par ex. (API)
 
 ## Architecture 
 60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
@@ -467,6 +485,11 @@ c.	SGBD (donner 2 exemples de SGBD)
     - "Left Join" > Récupérer toutes les lignes de la table de gauche (la 1ère mentionnée) et les lignes correspondantes dans l'autre table > Si aucune correpsondance, la requête renvoie quand même les lignes de la table de gauche, avec des valeurs NULL pour l'autre table => garder les données de la table de gauche, même sans correspondance
 
 78.	A quoi sert une vue dans une base de données ?
+
+    => Synthèse d'une requête d'interrogation de la base
+        > Éviter de taper des requêtes trop longues (nom/alias à la requête)
+    => SQL, commande "CREATE VIEW"
+
 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
 
     => Garantit que les relations entre les tables sont cohérentes.
@@ -563,16 +586,43 @@ h.	Concaténer 2 chaînes de caractères
 89.	Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
 
     => ORM - Object Relationnal Mapper
-    *INCOMPLET*
+        > Interface entre programme applicatif et base de données relationnelle pour simuler une base de données orientée objet 
+        > Définit des correspondances entre les schémas de la BdD et les classes du programme applicatif
+    => Présent dans de nombreux Frameworks
+    => Déclarer une association entre classes et tables, où chaque attribut de la classe est associé à une champ de la table
+
+    => Pour Symfony : Doctrine
 
 90.	Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
+
+    => Fournir à une classe les services dont elle a besoin
+    => "Autowiring" (interne) (> conteneur de services) + Composer (externe)
+    => Le fichier services.yaml (ressources internes) + composer.json (ressources externes)
+
 91.	Que permet le bundle Maker au sein de Symfony ? 
+
+    => *???*
+
 92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
 
     => DQL (Doctrine Query Language) > language propre à Doctrine pour interagir avec la BdD
         > Similaire à SQL mais travaille directement avec les objets et entités définies dans le PHP (plutôt qu'avec les tables en BdD)
 
 93.	Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
+
+    => Le composant "Security"
+        > Gère le formulaire de connexion,
+        le hashage de mots de passe,
+        les redirections après Login/logout,
+        les rôles (permissions nécessaires pour accéder à une ressource ou effectuer une action spécifique) (> 
+            - ex. $user pour accès ou action lié à une authentification
+            - ex.2 rôles pour accès à certaines parties de l'application 
+                ```
+                access_control:
+                - { path: ^/admin, roles: ROLE_ADMIN }
+                - { path: ^/profile, roles: ROLE_USER }
+                ```
+            )
 
 ## Sécurité
 94.	Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
@@ -587,6 +637,15 @@ h.	Concaténer 2 chaînes de caractères
     => Le filtrage des champs de formulaires HTML en PHP permet notamment de se prémunir des injections XSS, en validant ou en assainissant les données saisies par l'utilisateur avant de les utiliser, afin de s'assurer qu'elles respectent un format attendu et qu'elles ne contiennent pas de code malveillant.
 
 96.	Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?
+
+    => Forcer une utilisateur authentifié à exécuter des actions spécifiques à sont insu 
+        > Faille exploitable si l'authentification de l'application est uniquement basée sur les cookies
+        > Corrompre la relation entre le navigateur web et le serveur
+        > Forcer un changement de mot de passe ou autre info personnelle et récupérer des données sensibles, via une page malveillante
+        qui imite l'application 
+    => Jeton CSRF > Valeurs uniques générées aléatoirement côté serveur et envoyées au client > Valeur unique pour chaque requête 
+        > Activée par défaut dans Symfony lors de la soumission de formulaires
+
 97.	Définir l’attaque par force brute et l’attaque par dictionnaire
 
     => Attaque qui consite à essayer toutes les combinaisons possibles de mot de passe de manière automatisée > Efficace si MdP est faible ou court.
