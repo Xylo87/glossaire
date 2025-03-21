@@ -679,7 +679,16 @@ h.	Concaténer 2 chaînes de caractères
     Il est déconseillé de réutiliser les mots de passe pour un même compte (en cas de réinitialisation).
 
 102.	Qu’est-ce que l’hameçonnage ?
+
+    => Technique de fraude en ligne visant à tromper les utilisateurs pour qu'ils révèlent des informations sensibles (mots de passe, ID perso. etc.) > Via des sites web imitant des entités légitimes
+    => Moyen de s'en prémunir : authentification à 2 facteurs (même si attaquants connaissent un mot de passe)
+
 103.	Définir la « validation des entrées »
+
+    => Vérifier que les données reçues de sources externes (utilisateur, formulaire etc.) sont correctes, sécurisées et appropriées avant d'être utilisées par le système > Empêcher les utilisateurs malveillants d'introduire des données (injection SQL, failles XSS etc.)
+    => Validation synthaxique (ex. @ pour une adresse mail etc.), validation sémantique (ex. Age = nombre entier positif etc.), validation de longueur, validation de type, validation d'origine (vérification de jeton CSRF)
+        => Bonnes pratiques : utiliser des listes blanches (accepter uniquement des entrées spécifiques avec options préétablies, au lieu de permettre à l'utilisateur d'entrer librement des données etc.)
+
 
 ## RGPD
 104.	Qu’est-ce que le RGPD ?
@@ -775,9 +784,9 @@ a.	To render and display web pages *<=*
 b.	To execute serve-side code
 c.	To manage databases
 4)	What is the difference between GET and POST methods in HTTP ?
-a.	GET retrieves data from a server, while POST submits data to a server *<=*
+a.	GET retrieves data from a server, while POST submits data to a server
 b.	GET submits data to a server, while POST retrieves data from a server
-c.	GET and POST methods are interchangeable
+c.	GET and POST methods are interchangeable *<=*
 5)	What is the purpose of version control systems (e.g., Git) in web development ?
 a.	To track changes and manage collaborative development *<=*
 b.	To optimize website loading speed
