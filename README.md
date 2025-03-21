@@ -692,7 +692,13 @@ h.	Concaténer 2 chaînes de caractères
 
 ## RGPD
 104.	Qu’est-ce que le RGPD ?
+
+    => Règlement général sur la protection des données (UE) > Protection des personnes physiques à l'égard des données à caractère personnel et à la libre circulation des ces données > Unifie et renforce la protection des données pour les individus au sein de l'UE
+
 105.	Quel est son objectif principal ?
+
+    => Accroître la protection des personnes concernées par un traitement de leurs données à caractère personnel et la réponsabilité des acteurs de ce traitement > Augmentation des pouvoirs des autorités de contrôle (CNIL)
+
 106.	Quelle est la date d’entrée en vigueur du RGPD ?
 
     => Entrée en application dans tous les pays membres de l'Union Européenne le 25 mai 2018
