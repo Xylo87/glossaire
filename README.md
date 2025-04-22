@@ -790,9 +790,9 @@ a.	To render and display web pages *<=*
 b.	To execute serve-side code
 c.	To manage databases
 4)	What is the difference between GET and POST methods in HTTP ?
-a.	GET retrieves data from a server, while POST submits data to a server
+a.	GET retrieves data from a server, while POST submits data to a server *<=*
 b.	GET submits data to a server, while POST retrieves data from a server
-c.	GET and POST methods are interchangeable *<=*
+c.	GET and POST methods are interchangeable
 5)	What is the purpose of version control systems (e.g., Git) in web development ?
 a.	To track changes and manage collaborative development *<=*
 b.	To optimize website loading speed
