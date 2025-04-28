@@ -402,6 +402,9 @@
     => Séparation des préoccupations (composants) > Facilite la gestion du code, sa maintenance et les tests > Modèle réutilisable avec différentes vues/interfaces (sans toucher à la logique de gestion des données)
 
 65.	Existe-t-il des variantes à l’architecture MVC ?
+
+*Incomplet*
+
 66.	Qu’est-ce qu’une API ? Définir l’architecture REST
 
     => Ensemble de règles et de méthodes qui permettent à différentes applications de communiquer entre elles.
@@ -601,7 +604,8 @@ h.	Concaténer 2 chaînes de caractères
 
 91.	Que permet le bundle Maker au sein de Symfony ? 
 
-    => *???*
+    => Bundle officiel qui fournit des commandes pour générer rapidement du code standardisé > Création de contrôleurs, entités, formulaires, migrations etc.
+        > Commandes utilisants le Bundle > symfony console make:entity (ou m:e), symfony console make:user, symfony console make:registration -form
 
 92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
 
@@ -652,6 +656,11 @@ h.	Concaténer 2 chaînes de caractères
     =>  Méthode d'attaque avec essais d'une liste préétablie de mots courants, de combinaisons ou de phrases pour deviner un mot de passe > Plus rapide qu'une attaque par force brute car l'attaque se concentre sur des mots de passe probables (mots simples, combinaisons courantes etc.).
 
 98.	Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement
+
+    => ex. Faille upload > Une exploitation d'une faille upload consiste en une attaque via un uploader de fichier : 
+    l'utilisateur malveillant pourrait ainsi télécharger un fichier contenant un code PHP de sa création. 
+    Le fichier pourrait alors être déposé sur le serveur de l'application. Il suffit ensuite au pirate d'appeler son fichier pour que celui-ci s'exécute. 
+
 99.	A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
 
     => Authentification = processus de vérification de l'identité d'un utilisateur lors de la connexion à une application, pour pouvoir accéder aux fonctionnalités de cette dernière > Demande d'un identifiant (nom d'utilisateur, e-mail etc.) et d'un mot de passe.
@@ -697,13 +706,21 @@ h.	Concaténer 2 chaînes de caractères
 
 105.	Quel est son objectif principal ?
 
-    => Accroître la protection des personnes concernées par un traitement de leurs données à caractère personnel et la réponsabilité des acteurs de ce traitement > Augmentation des pouvoirs des autorités de contrôle (CNIL)
+    => Accroître la protection des personnes concernées par un traitement de leurs données à caractère personnel et la reponsabilité des acteurs de ce traitement > Augmentation des pouvoirs des autorités de contrôle (CNIL)
 
 106.	Quelle est la date d’entrée en vigueur du RGPD ?
 
     => Entrée en application dans tous les pays membres de l'Union Européenne le 25 mai 2018
 
 107.	Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
+
+    => - Avertissements et mises en demeure
+    - Limitation temporaire ou définitive du traitement des données
+    - Amendes administratives (plafond à 20 millions d'euros ou 4% du chiffre d'affires annuel mondial > le montant max. est retenu)
+    - Responsabilité civile avc indemnisation des victimes
+    - Atteinte à la réputation (publicité des sanctions)
+    => Orange sanctionné fin 2024 (amende de 50 millions d'euros > affichage de publicités dans les courriels des utilisateurs de son service de messagerie, sans consentement préalable)
+
 108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
 
     => La CNIL (Commission nationale de l'Informatique et des Libertés)
@@ -712,10 +729,45 @@ h.	Concaténer 2 chaînes de caractères
     - Sanctions > amendes et mesures correctives (ex. imposition d'un changement dans la gestion/traitement des données)
 
 109.	Quel est le consentement valide selon le RPGD ?
+
+    => Le consentement doit être libre (sans pression ou contrainte), spécifique (lié à finalité précise), éclairé (l'utilisateur reçoit toutes les informations nécessaires avant de consentir),
+    univoque (exprimé clairement par une action positive > ex. case à cocher) > le consentement soit être révocable à tout moment
+
 110.	Qu’est-ce qu’une politique de confidentialité ?
+
+    => Document ou page web qui informe de manière claire, transparente et accessible les personnes sur :
+    - la nature des données personnelles collectées
+    - les finalités de cette collecte
+    - les personnes qui accèdent aux données (internes, partenaires, sous-traitants)
+    - la durée de conservation de ces données
+    - les droits des personnes concernant ces données (accès, rectification, suppression, opposition, portabilité etc.)
+    - la manière dont on peut exercer ces droits (ex. coordonnées du délégué à la protection des données - DPO)
+    - la base légale sur laquelle repose ces traitements (consentement, contrat, obligation légale, intérêt légitime etc.)
+
+
 111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
+
+    => Pas de durée de conservation fixe > Données conservées pendant la durée nécessaire à la finalité pour laquelle elles ont été collectées
+        > Finalité atteinte = données doivent être supprimées ou anonymisées
+        > Certaines obligations légales imposent durée spécifiques (ex. 10 ans pour les documents comptables en France)
+    => Pas de conservation "infinie" par précaution
+
 112.	Quels sont les droits des utilisateurs selon le RGPD ?
+
+    => - Droit d'accès (savoir quelles données sont collectées et comment elles sont utilisées)
+    - Droit de rectification
+    - Droit d'effacement ("droit à l'oubli")
+    - Droit à la limitation du traitement (demander à "geler" l'utilisation des données, sans les effacer)
+    - Droit d'opposition (ex. pour marketing direct ou collecte de données pour nourrir les IA de Meta)
+    - Droit à la portabilité (récupérer ses données dans un format structuré et transférable à un autre service)
+    - Droit d'être informé (info. claire dès la collecte des données > politique de confidentialité)
+    - Droit de ne pas faire l'objet d'une décision automatisée 
+    - Droit de retirer son consentement (à tout moment)
+        => doivent être faciles à exercer, gratuits et réponse dans un délai d'un mois maximum
+
 113.	Qu’est-ce que le principe de minimisation des données selon le RGPD ?
+
+    => Seules les données strictement nécessaires à l'objectif poursuivi doivent être collectées et traitées 
 
 ## SEO
 114.	Qu’est-ce que le SEO ? 
@@ -735,6 +787,12 @@ h.	Concaténer 2 chaînes de caractères
 
 
 120.	Qu’est-ce que le « nofollow » en SEO ?
+
+    => Valeur d'attribut (<meta>, <rel> dans un lien) pour indiquer aux moteurs de recherche de ne pas tranférer d'autorité ("Link Juice") vers la page cible (=> popularité de la page source).
+    => Garder le contrôle sur le référencement de certains liens sortants
+    => Indication (et non obligation) pour le Crawling de Google (2019)
+    => Balise <meta name="robots" content="nofollow"> indique aux moteurs de recherche de ne suivre aucun lien de cette page 
+
 121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
 122.	Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?
 123.	Quelle est la recommandation pour les URL d'un site web bien référencé ?
