@@ -771,9 +771,27 @@ h.	Concaténer 2 chaînes de caractères
 
 ## SEO
 114.	Qu’est-ce que le SEO ? 
+
+    => Search Engine Optimization > référencement naturel
+    => Ensemble des techniques visant à améliorer la visibilité d'un sote web sur les moteurs de recherche de manière organique (sans payer de publicité)
+    => 3 piliers > contenu, technique (structure du site) et popularité (liens entrants > liens provenant d'autres sites  pointant vers le sien => "votes de confiance" = fiable et pertinent pour les moteurs de recherche)
+
 115.	Quel est l’objectif principal du SEO ?
+
+    => Généré un trafic qualifié et durable vers un site web, en le faisant apparaître en haut des résultats naturels des moteurs de recherche
+
 116.	Existe-t-il plusieurs types de référencement ? Lesquels ?
+
+    => SEA (référencement payant) > basé sur l'achat de publicités (ex. Google Ads)
+    => SMO (Social Media Optimization) > optimisation de la visibilité sur les réseaux sociaux
+
 117.	Qu’est-ce que la densité de mots-clés en SEO ?
+
+    => Correspond au rapport entre le nombre de fois qu'un mot-clé est utilisé et le nombre total de mots d'une page (risque de "sur-optimisation")
+        > Exprimée en pourcentage 
+    => Bonne densité aide les moteurs de recherche à comprendre de quoi parle la page > Densité trop élevée peut être pénalisée par Google (nuit à la lisibilité et à l'expérience utilisateur)
+        > Recommandation : rester en 1% et 2%
+
 118.	Qu’est-ce qu’un attribut « alt » ?
 
     => Obligatoire > Contient une description textuelle de l'image > Utile pour les outils de lecture d'écran et si l'image ne peut pas être chargée (ex. lien périmé ou blocage de contenu)
