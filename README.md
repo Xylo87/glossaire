@@ -812,8 +812,24 @@ h.	Concaténer 2 chaînes de caractères
     => Balise <meta name="robots" content="nofollow"> indique aux moteurs de recherche de ne suivre aucun lien de cette page 
 
 121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
+
+    => Google valorise les pages apportant des réponses pertinentes aux utilisateurs (répondre aux intentions de recherche) 
+        > L'augmentation du temps passé sur le site envoie un signal positif aux moteurs de recherche
+    => Backlinks (contenu utile et original est plus souvent cité par d'autres sites > augmentation de l'autorité du domaine)
+    => Optimisation naturelle des mots-clés (utilisation fluide)
+    => Réduit le taux de rebond (contenu engageant pousse les visiteurs à explorer davantage le site)
+
 122.	Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?
+
+    => Aide les moteurs de recherche à comprendre le contenu et sa structure hierarchique 
+    => - h1 (sujet principal de la page > un seul en général)
+    - h2/h3 (sous-parties logiques > thèmes)
+    => Mots-clés dans les titres
+
 123.	Quelle est la recommandation pour les URL d'un site web bien référencé ?
+
+    => Les URL doivent être courtes, claires, descriptives, contenir des mots-clés pertinents et utiliser des tirets (-) pour séparer les mots
+
 124.	Qu'est-ce que le maillage interne et pourquoi est-il important pour le référencement ?
 125.	Qu'est-ce que l'optimisation des images pour le référencement ?
 126.	Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
