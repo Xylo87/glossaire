@@ -831,8 +831,19 @@ h.	Concaténer 2 chaînes de caractères
     => Les URL doivent être courtes, claires, descriptives, contenir des mots-clés pertinents et utiliser des tirets (-) pour séparer les mots
 
 124.	Qu'est-ce que le maillage interne et pourquoi est-il important pour le référencement ?
+
+    => Organisation des liens entre les pages d'un même site internet > aide les moteurs de recherche à explorer le site, comprendre sa structure et transmettre l'autorité entre les pages (une page reçoit de l'autorité des autres pages > améliore le positionnement de cette page dans les moteurs de recherche)
+
 125.	Qu'est-ce que l'optimisation des images pour le référencement ?
+
+    => Réduction du poids, formats adaptés, balises ALT descriptives et nommage des fichiers de façon pertinentes
+        > Améliore le temps de chargement et la visibilité dans Google Images
+
 126.	Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
+
+    => Fichier qui liste les pages importantes d'un site web pour aider les moteurs de recherche à les lire et les indexer efficacement.
+        > Utile pour les site volumineux 
+        > Fichier au format JSON
 
 ## Gestion de projets - DevOps
 127.	Qu’est-ce que la gestion de projet ?	
