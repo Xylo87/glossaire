@@ -860,6 +860,9 @@ h.	Concaténer 2 chaînes de caractères
     - Bonne gestion des attentes des parties prenantes en établissant des critères clairs sur le livrable
 
 130.	A quoi sert la méthodologie MVP ? Citer les caractéristiques clés
+
+    => Minimum Viable Product > version simplifiée d'un produit, avec juste assez de fonctionnalités pour être utilisée par des premiers utilisateurs et obtenir rapidement des retours
+
 131.	Qu’est-ce que la planification itérative ?
 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique
 133.	Qu’est-ce qu’une réunion de revue de projet ?
@@ -874,8 +877,17 @@ h.	Concaténer 2 chaînes de caractères
 136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
 137.	Qu’est-ce que l’intégration continue ? 
 138.	Qu’est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?
+
+    => Créer, déployer et exécuter des applications dans des conteneurs, des environnements légers, isolés et portables
+
 139.	Qu’est-ce qu’un test unitaire ? 
+
+    => Vérifier qu'une fonction se comporte correctement de façon isolée (sans base de données, API ou dépendance externe)
+
 140.	Quelle est l'unité de code testée lors d'un test unitaire ?
+
+    => Fonction, méthode ou classe
+
 141.	Quelles sont les caractéristiques d'un bon test unitaire ?
 142.	Qu'est-ce qu'une assertion dans un test unitaire ?
  
