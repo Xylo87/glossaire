@@ -846,8 +846,15 @@ h.	Concaténer 2 chaînes de caractères
         > Fichier au format JSON
 
 ## Gestion de projets - DevOps
-127.	Qu’est-ce que la gestion de projet ?	
+127.	Qu’est-ce que la gestion de projet ?
+
+    => Ensemble de méthodes et outils utilisés pour planifier, organiser, suivre et finaliser un projet afin d'atteindre des objectifs précis dans un délai et avec des ressources définis
+
 128.	Qu’est-ce qu’une méthode Agile de gestion de projet ? 
+
+    => Approche flexible et itérative qui vise à livrer un produit progressivement, en s'adaptant aux besoins changeants du client
+        > Favorise la collaboration, les cycles courts (appelés "Sprints") et l'amélioration continue
+
 129.	Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages
 
     => Technique des priorités en gestion de projets > Permet de classer les tâches et leur exigence en 4 catégories :
@@ -861,11 +868,24 @@ h.	Concaténer 2 chaînes de caractères
 
 130.	A quoi sert la méthodologie MVP ? Citer les caractéristiques clés
 
-    => Minimum Viable Product > version simplifiée d'un produit, avec juste assez de fonctionnalités pour être utilisée par des premiers utilisateurs et obtenir rapidement des retours
+    => Minimum Viable Product > version simplifiée d'un produit, avec juste assez de fonctionnalités pour être utilisée par des premiers utilisateurs, tester une idée et obtenir rapidement des retours
+        > Ajustement du développement en fonction
+        > - Fonctionnalités minimales (résoudre le problème principal)
+        - Développement rapide (économe en temps et ressources)
+        - Feedback utilisateurs
+        - Évolutif (enrichi au fil du temps selon besoins)
+        - Réduction des risques (produit complet qui ne correspondrait pas)
+
 
 131.	Qu’est-ce que la planification itérative ?
+
+    => Approche où le travail est planifié, réalisé et ajusté par petites étapes successives (plutôt que tout en une seule fois dès le début)
+
 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique
 133.	Qu’est-ce qu’une réunion de revue de projet ?
+
+    => Équipe projet et parties prenantes évaluent l'avancement (écart par rapport au planning, budget ou objectifs), valide les livrables et ajuste le plan si nécessaire 
+
 134.	Qu’est-ce qu’un livrable dans un projet ? 
 
     => Produit ou résultat qui doit être fourni à la fin d'une phase ou du projet lui-même.
