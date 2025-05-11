@@ -895,10 +895,18 @@ h.	Concaténer 2 chaînes de caractères
 
 135.	Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux
 136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
-137.	Qu’est-ce que l’intégration continue ? 
+
+    => Vise à unifier le développement et les opérations pour automatiser/fiabiliser le cycle de vie des applications.
+        > Optimiser le développement pour livrer des logiciels de qualité
+
+137.	Qu’est-ce que l’intégration continue ?
+
+    => Intégration fréquente du code dans un dépôt commun, avec tests automatiques à chaque modification 
+
 138.	Qu’est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?
 
     => Créer, déployer et exécuter des applications dans des conteneurs, des environnements légers, isolés et portables
+        > Grantit que les applications fonctionnent de la même façon sur tous les environnements (développement, test, production) > Facilite la portabilité des déploiements
 
 139.	Qu’est-ce qu’un test unitaire ? 
 
@@ -909,7 +917,18 @@ h.	Concaténer 2 chaînes de caractères
     => Fonction, méthode ou classe
 
 141.	Quelles sont les caractéristiques d'un bon test unitaire ?
+
+    => - Isolé (ne dépend d'aucun élément externe)
+    - Rapide
+    - Automatisé (régulièrement)
+    - Précis (une seule fonctionnalité définie)
+    - Fiable (même résulat pour mêmes entrées)
+    - Lisible
+    - Rééxécutable (à volonté)
+
 142.	Qu'est-ce qu'une assertion dans un test unitaire ?
+
+    => Instruction qui vérifie sir le résultat attendu correspond au résultat obtenu
  
 ## English
 1)	What does JavaScript enable you to do on a website ?
