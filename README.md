@@ -882,6 +882,11 @@ h.	Concaténer 2 chaînes de caractères
     => Approche où le travail est planifié, réalisé et ajusté par petites étapes successives (plutôt que tout en une seule fois dès le début)
 
 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique
+
+    => - Scrum (méthode de sprints courts et de rôles définis) (> ex. rôle = Product Owner > défini les besoins, priorise les tâches, valide les fonctionalités livrées)
+    - Kanban (gestion visuelle des tâches via un tableau > à faire, en cours, terminé)
+    - Extreme programming (XP > mise en avant de la qualité du code > pair programming par exemple > Driver + Navigator, rôles switchables, apprentissage mutuel, réduction des erreurs)
+
 133.	Qu’est-ce qu’une réunion de revue de projet ?
 
     => Équipe projet et parties prenantes évaluent l'avancement (écart par rapport au planning, budget ou objectifs), valide les livrables et ajuste le plan si nécessaire 
@@ -894,6 +899,11 @@ h.	Concaténer 2 chaînes de caractères
         > Ex. Version d'une application web
 
 135.	Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux
+
+    => - Transparence (infos importantes visibles et comprises de tous)
+    - Inspection (examen régulier du produit pour détecter les écarts > ex. Daily Meetings)
+    - Adaptation (ajustement rapide après rétrospectives + ajustement du backlog (liste priorisée des fonctionnalités))
+
 136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
 
     => Vise à unifier le développement et les opérations pour automatiser/fiabiliser le cycle de vie des applications.
